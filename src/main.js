@@ -5,10 +5,11 @@ import './style.css'
 
 const app = createApp(App)
 
-import pt from './locales/pt'
+import pt from './locales/pt-BR'
 import en from './locales/en'
 import sp from './locales/sp'
 
+console.log()
 
 const languages = {
     pt,
@@ -17,9 +18,10 @@ const languages = {
 }
 
 const i18n = createI18n({
-    locale: 'pt',
+    locale: navigator.language,
     fallbackLocale: 'en',
     messages: languages,
+    missingWarn: false
   
 })
 

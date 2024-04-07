@@ -2,7 +2,7 @@
 export default{
   data(){
     return{
-      language: 'pt'
+      language: ''
     }
   },
   methods:{
@@ -21,7 +21,7 @@ export default{
   <div class="trocar">{{ $t("salutation.change") }}
   <button v-if="language !== 'en'" @click="languageChoice( 'en' )"><img src="../img/estados-unidos.png" alt="Estatos Unidos"></button>
   <button v-if="language !== 'sp'" @click="languageChoice( 'sp' )"><img src="../img/espanha.png" alt="Espanha"></button>
-  <button v-if="language !== 'pt'" @click="languageChoice( 'pt' )"><img src="../img/brasil.png" alt="Espanha"></button>
+  <button v-if="language !== 'pt'" @click="languageChoice( 'pt-BR' )"><img src="../img/brasil.png" alt="Brasil"></button>
 
   </div>
 
